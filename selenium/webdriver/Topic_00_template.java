@@ -30,7 +30,7 @@ public class Topic_00_template {
 				
 
 	@Test
-	public void TC_01_WebElement() {
+	public void TC_01_() {
 		
 				
 		
@@ -38,13 +38,23 @@ public class Topic_00_template {
 	}
 
 	@Test
-	public void TC_02_Logo() {
+	public void TC_02_() {
 		
 	}
 
 	@Test
-	public void TC_03_Form() {
+	public void TC_03_() {
 	
+	}
+	
+	public void sleepInSecond(long timeInSecond) {
+		
+		try {
+			Thread.sleep(timeInSecond * 1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@AfterClass
