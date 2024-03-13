@@ -14,11 +14,6 @@ public class Topic_00_template {
 
 	@BeforeClass
 	public void beforeClass() {
-		if (osName.contains("Windows")) {
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-		} else {
-			System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
-		}
 
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -27,6 +22,8 @@ public class Topic_00_template {
 
 	@Test
 	public void TC_01_() {
+		System.out.print("");
+
 
 	}
 
