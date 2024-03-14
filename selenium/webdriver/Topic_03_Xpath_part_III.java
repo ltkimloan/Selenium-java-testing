@@ -25,7 +25,6 @@ public class Topic_03_Xpath_part_III {
 
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
 	}
 
 	@Test
@@ -163,6 +162,6 @@ public class Topic_03_Xpath_part_III {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.quit();
+		driver.quit();
 	}
 }
