@@ -180,17 +180,18 @@ public class Topic_18_Window_tab {
 				"The comparison list was cleared.");
 	}
 		
-//	//@Test
-//	public void TC_03_selenium_version4() {
+	//@Test
+//	public void TC_05_selenium_version4() {
+//
 //		driver.findElement("");
 //		System.out.println("Driver id: " + driver.toString());
 //
 //		WebDriver facebookDriver = driver.switchTo().newWindow(WindowType.TAB);
 //		facebookDriver.get("https://www.facebook.com/");
 //		System.out.println("Driver ID facebook: " + facebookDriver.toString());
-//
-//	}
-//
+
+	//}
+
 	public void switchToWindowByID(String currentID) {
 		// lay ra het tat ca tab/window ID
 		Set<String> allIDs = driver.getWindowHandles();
