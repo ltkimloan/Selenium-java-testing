@@ -196,7 +196,6 @@ public class Topic_18_Window_tab {
 		// lay ra het tat ca tab/window ID
 		Set<String> allIDs = driver.getWindowHandles();
 
-		//dung vong lap duyet qua tung ID trong Set ở trên
 		
 		for (String id : allIDs) {
 			if(!id.equals(currentID)) {
