@@ -1,6 +1,8 @@
 package webdriver;
 
 import java.time.Duration;
+import java.util.Random;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
@@ -45,6 +47,10 @@ public class Topic_00_template {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	public String getEmailAddress() {
+		Random rand = new Random();
+		return "mikejoin" + rand.nextInt(9999) + "@gmail.net";
 	}
 
 	@AfterClass
