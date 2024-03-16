@@ -58,13 +58,13 @@ public class Topic_23_Wait_II_FindElement {
 		System.out.println("Start step: " + getDateTimeNow());
 		elements = driver.findElements(By.cssSelector("input[type='text'],[type='password']"));
 		System.out.println("List element have: " + elements.size());
-		System.out.println("Start step: " + getDateTimeNow());
+		System.out.println("End step: " + getDateTimeNow());
 
 		//*Case 3 - element không được tìm thấy
 		System.out.println("Start step: " + getDateTimeNow());
 		elements = driver.findElements(By.xpath("//input[@name='reg_email__']"));
 		System.out.println("List element have: " + elements.size());
-		System.out.println("Start step: " + getDateTimeNow());
+		System.out.println("End step: " + getDateTimeNow());
 	}
 
 	@Test
