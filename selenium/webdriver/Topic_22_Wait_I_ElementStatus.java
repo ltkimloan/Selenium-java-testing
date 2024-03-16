@@ -70,7 +70,7 @@ public class Topic_22_Wait_I_ElementStatus {
 		sleepInSecond(2);
 
 		// Dieu kien 2, element khong co trong UI nhung co trong html
-		explicitWait.until(ExpectedConditions.presenceOfElementLocated(confirmEmail))
+		explicitWait.until(ExpectedConditions.presenceOfElementLocated(confirmEmail));
 
 	}
 	@Test
