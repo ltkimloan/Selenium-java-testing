@@ -9,10 +9,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.Date;
 import java.util.Random;
 
-public class Topic_24_Wait_III_ImplicitWait {
+public class Topic_25_Wait_IV_ExplicitWait {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
@@ -24,7 +23,7 @@ public class Topic_24_Wait_III_ImplicitWait {
 	}
 
 	@Test
-	public void TC_01_Equals_5_Second() {
+	public void TC_01_Equals5_Second() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://automationfc.github.io/dynamic-loading/");
 
@@ -64,12 +63,6 @@ public class Topic_24_Wait_III_ImplicitWait {
 	public String getEmailAddress() {
 		Random rand = new Random();
 		return "mikejoin" + rand.nextInt(9999) + "@gmail.net";
-	}
-
-	public String getDateTimeNow() {
-		Date date = new Date();
-		return date.toString();
-
 	}
 
 	@AfterClass
