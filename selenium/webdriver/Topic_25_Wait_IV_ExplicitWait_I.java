@@ -14,7 +14,7 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Random;
 
-public class Topic_24_Wait_III_ImplicitWait {
+public class Topic_25_Wait_IV_ExplicitWait_I {
 	WebDriver driver;
 	WebDriverWait explicitWait;
 	String projectPath = System.getProperty("user.dir");
