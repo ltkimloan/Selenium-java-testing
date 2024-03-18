@@ -18,7 +18,7 @@ import java.util.Random;
 public class Topic_26_Wait_V_ExplicitWait_II {
 	WebDriver driver;
 	WebDriverWait explicitWait;
-	String projectPath = System.getProperty("user.dir");
+	String projectPath = System .getProperty("user.dir");
 	String osName = System.getProperty("os.name");
 
 	String meoconName = "meocon.png", hoaquynhName = "hoaquynh.jpg", opencartName = "opencart.png";
@@ -75,9 +75,12 @@ public class Topic_26_Wait_V_ExplicitWait_II {
 		driver.findElement(By.cssSelector("div.mainUploadSuccessLink a.ajaxLink")).click();
 		Assert.assertTrue(explicitWait.until(ExpectedConditions.invisibilityOfAllElements(driver.findElements((By.cssSelector("div.spinner-border"))))));
 
-		Assert.assertTrue(explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='" + meoconName + "']/ancestor::div[contains(@class,'text-md-start')]/following-sibling::div//span[text()='Download']"))).isDisplayed());
-		Assert.assertTrue(explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='" + hoaquynhName +"']/ancestor::div[contains(@class,'text-md-start')]/following-sibling::div//span[text()='Download']"))).isDisplayed());
-		Assert.assertTrue(explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='" + opencartName+  "']/ancestor::div[contains(@class,'text-md-start')]/following-sibling::div//span[text()='Download']"))).isDisplayed());
+		Assert.assertTrue(explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				"//span[text()='" + meoconName + "']/ancestor::div[contains(@class,'text-md-start')]/following-sibling::div//span[text()='Download']"))).isDisplayed());
+		Assert.assertTrue(explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				"//span[text()='" + hoaquynhName +"']/ancestor::div[contains(@class,'text-md-start')]/following-sibling::div//span[text()='Download']"))).isDisplayed());
+		Assert.assertTrue(explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(
+				"//span[text()='" + opencartName+  "']/ancestor::div[contains(@class,'text-md-start')]/following-sibling::div//span[text()='Download']"))).isDisplayed());
 
 
 	}
