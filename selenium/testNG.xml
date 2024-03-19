@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium WebDriver" verbose="1">
+
+    <groups>
+        <run>
+            <include name="customers"/>
+            <include name="order"/>
+        </run>
+
+    </groups>
+    <test name="Run On Chrome  browser">
+        <packages>
+            <package name="customers"></package>
+            <package name="orders"></package>
+            <package name="products"></package>
+        </packages>
+<!--        <classes>-->
+<!--            <class name="webdriver.Topic_00_template"/>-->
+<!--            <class name="testng.Topic_01_Assert"/>-->
+<!--            <class name="testng.Topic_02_Annotation"/>-->
+<!--        </classes>-->
+    </test>
+
+</suite>
