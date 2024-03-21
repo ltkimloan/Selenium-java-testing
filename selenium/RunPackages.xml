@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Nop commerce" verbose="1">
+    <listeners>
+        <listener class-name="listeners.ExtentReport"></listener>
+    </listeners>
+
+    <test name="Run On Firefox  browser" preserve-order="true" >
+
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="122"/>
+       <classes>
+           <class name="testng.Topic_03_AlwayRun"></class>
+           <class name="testng.Topic_02_Annotation"></class>
+           <class name="testng.Topic_05_Skip"></class>
+           <class name="testng.Topic_08_Parameter"></class>
+           <class name="testng.Topic_04_Priority"></class>
+       </classes>
+             
+    </test>
+
+</suite>

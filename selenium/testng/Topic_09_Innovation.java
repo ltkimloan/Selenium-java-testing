@@ -32,7 +32,7 @@ public class Topic_09_Innovation {
 
 	}
 
-	@Test(invocationCount = 5)
+	@Test(invocationCount = 1)
 	public void TC_01_Register() {
 		driver.get("http://live.techpanda.org/");
 
@@ -68,7 +68,7 @@ public class Topic_09_Innovation {
 		sleepInSecond(5);
 
 		Assert.assertTrue(driver.findElement(By.xpath("//img[contains(@src,'logo.png')]")).isDisplayed());
-		System.out.println("Email Address/Password: "+ emailAddress +"/" + password);
+		System.out.println("Email Address and Password: "+ emailAddress +"/" + password);
 	}
 
 	@Test
