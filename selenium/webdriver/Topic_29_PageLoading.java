@@ -53,8 +53,6 @@ public class Topic_29_PageLoading {
 
 		Assert.assertTrue(isPageLoadedSuccess());
 
-
-
 	}
 
 	@Test
